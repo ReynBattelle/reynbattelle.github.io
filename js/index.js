@@ -49,4 +49,6 @@ function updateVisiblity() {
     }    
 }
 
-window.addEventListener("resize", updateVisiblity)
+updateVisiblity();
+
+window.addEventListener("resize", updateVisiblity);
