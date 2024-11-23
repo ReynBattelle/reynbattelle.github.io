@@ -55,6 +55,16 @@ body {
     padding-top: 6px;
 }
 
+#container1A {
+    float: left;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    font-size: 18px;
+    vertical-align: middle;
+    color: #eaebef;
+    translate: 5px -1px;
+}
+
 #boin {
     background-color: #0f1014
 }
@@ -74,3 +84,4 @@ body {
     padding-top: 5px;
     padding-bottom: 5px;
 }
+

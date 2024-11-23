@@ -1,6 +1,8 @@
 const a = document.getElementById("a");
 const home = document.getElementById("home");
 const projects = document.getElementById("projects");
+const contain = document.getElementById("container1A");
+const list = document.getElementById("list");
 
 const currentFile = window.location.pathname.split("/").pop();
 
@@ -16,6 +18,10 @@ projects.addEventListener("mouseover", () => {
     projects.style.cursor = "pointer";
 })
 
+list.addEventListener("mouseover", () => {
+    list.style.cursor = "pointer"
+})
+
 a.addEventListener("click", () => {
     document.location = "../";
 }); 
@@ -26,6 +32,10 @@ home.addEventListener("click", () => {
 
 projects.addEventListener("click", () => {
     document.location = "../html/pastprojects";
+})
+
+list.addEventListener("click", () => {
+
 })
 
 
@@ -39,11 +49,13 @@ function updateVisiblity() {
     if (window.innerWidth <= 500) {
         home.style.visibility = "hidden";
         projects.style.visibility = "hidden";
+        contain.style.visibility = "visible";
         home.innerText = "";
         projects.innerText = "";
     } else {
         home.style.visibility = "visible";
         projects.style.visibility = "visible";
+        contain.style.visibility = "hidden";
         home.innerText = "Home";
         projects.innerText = "Projects";
     }    
