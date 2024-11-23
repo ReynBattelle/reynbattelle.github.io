@@ -1,4 +1,39 @@
-img.cn {
-    width: 250px;
-    height: auto;
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
 }
+
+#h1 {
+    user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -ms-user-drag: none;
+    -webkit-user-drag: none;
+    width: auto;
+    color: #eaebef;
+    font-size: 20px;
+    padding: 5px;
+}
+.inter-regular {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+.prevent-select {
+    user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none; 
+}
+
+#container1 {
+    background-color: #6C0E97;
+    padding: 0;
+    margin: 0;
+}
+
+/*
+#boin {
+    background-color: #0f1014
+} */
