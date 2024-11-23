@@ -3,8 +3,7 @@ body {
     padding: 0;
     height: 100vh;
 }
-
-#h1 {
+#a {
     user-select: none;
     -webkit-user-select: none;
     -ms-user-select: none;
@@ -13,8 +12,23 @@ body {
     width: auto;
     color: #eaebef;
     font-size: 20px;
-    padding: 5px;
+    padding-left: 15px;
 }
+
+#home {
+    color: #eaebef;
+    font-size: 18px;
+    padding-right: 15px;
+    vertical-align: center;
+}
+
+#projects {
+    color: #eaebef;
+    font-size: 18px;
+    padding-right: 15px;
+    vertical-align: center;
+}
+
 .inter-regular {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
@@ -28,12 +42,35 @@ body {
 }
 
 #container1 {
-    background-color: #6C0E97;
-    padding: 0;
-    margin: 0;
+    float: left;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
-/*
+#container2 {
+    padding-top: 6px;
+}
+
+#container3 {
+    padding-top: 6px;
+}
+
 #boin {
     background-color: #0f1014
-} */
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.column {
+    float: right;
+    padding: 5px;
+}
+
+.row {
+    background: #6C0E97;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
